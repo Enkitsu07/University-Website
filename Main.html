@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PITI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="https://uploads.onecompiler.io/43vb8wy2e/43vb7sz8e/logo.png" alt="FLEURS University Logo"
+      class="logo-img">
+    <h1>Philippine Institute of Technology and Innovation</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="#" id="aboutTab" class="active" onclick="showTab('about');return false;">About</a>
+    <a href="#" id="programTab" onclick="showTab('program');return false;">Programs</a>
+    <a href="#" id="enrollTab" onclick="showTab('enroll');return false;">Enroll</a>
+    <a href="#" id="loginTab" onclick="showTab('login');return false;">Log in</a>
+  </nav>
+
+  <div class="container">
+    <!-- About Tab -->
+    <div id="aboutSection">
+      <div class="mission-vision">
+        <h3>Our Mission</h3>
+        <p>
+          To equip students with strong technical knowledge, problem-solving skills, and ethical values in
+          computing and engineering, preparing them to innovate and lead in a digital world.
+        </p>
+        <h3>Our Vision</h3>
+        <p>
+          To be a center of excellence in computer studies and engineering, recognized for innovation,
+          research, and contributions to industry and society.
+        </p>
+        <h3> About P.I.T.I </h3>
+        <p>
+          The Philippine Institute of Technology and Innovation is a premier higher education institution
+          dedicated to advancing knowledge in computer science and technology while fostering a culture of
+          creativity and problem-solving. Established in 1986, PITI has grown into a leader of innovation,
+          offering programs such as engineering and computer studies
+        </p>
+      </div>
+    </div>
+
+    <div id="programSection" class="hidden">
+      <div class="programs-list">
+        <h3>Degree Programs Offered</h3>
+        <ul>
+          <li><strong>BS Architecture</strong></li>
+          <li><strong>BS Civil Engineering</strong></li>
+          <li><strong>BS Computer Engineering</strong></li>
+          <li><strong>BS Mechanical Engineering</strong></li>
+          <li><strong>BS Chemical Engineering</strong></li>
+          <li><strong>BS Industrial Engineering</strong></li>
+          <li><strong>BS Electronics Engineering</strong></li>
+          <li><strong>BS Information Technology</strong></li>
+          <li><strong>BS Computer Science</strong></li>
+          <li><strong>BS Data Science</strong></li>
+        </ul>
+        <p>Each program is designed to equip students with practical skills and theoretical knowledge for
+          successful careers in their respective fields.</p>
+      </div>
+    </div>
+
+    <div id="enrollSection" class="hidden">
+      <h2>Enrollment Form</h2>
+      <div class="success hidden" id="enrollSuccess">Enrollment submitted! You can now log in.</div>
+      <form id="enrollForm">
+        <div class="form-group">
+          <label for="enroll-username">Create Username</label>
+          <input type="text" id="enroll-username" required>
+        </div>
+        <div class="form-group">
+          <label for="enroll-password">Create Password</label>
+          <input type="password" id="enroll-password" required>
+        </div>
+        <div class="form-group">
+          <label for="enroll-fullname">Full Name</label>
+          <input type="text" id="enroll-fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="enroll-email">Email</label>
+          <input type="email" id="enroll-email" required>
+        </div>
+        <div class="form-group">
+          <label for="enroll-dob">Date of Birth</label>
+          <input type="date" id="enroll-dob" required>
+        </div>
+        <div class="form-group">
+          <label for="enroll-program">Program Applying For</label>
+          <select id="enroll-program" required>
+            <option value="">-- Select Program --</option>
+            <option value="BS architecture">BS Architecture</option>
+            <option value="BS Civil Engineering">BS Civil Engineering</option>
+            <option value="BS Computer Engineering">BS Computer Engineering</option>
+            <option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
+            <option value="BS Chemical Engineering">BS Chemical Engineering</option>
+            <option value="BS Industrial Engineering">BS Industrial Engineering</option>
+            <option value="BS Electronics Engineering">BS Electronics Engineering</option>
+            <option value="BS Information Technology">BS Information Technology</option>
+            <option value="BS Computer Science">BS Computer Science</option>
+            <option value="BS Data Science">BS Data Science</option>
+          </select>
+        </div>
+        <input type="submit" value="Submit Enrollment">
+      </form>
+    </div>
+
+    <div id="loginSection" class="hidden">
+      <h2>Student Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="login-username">Username</label>
+          <input type="text" id="login-username" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+
+    <div class="info-section hidden" id="personalInfo">
+      <h2>Welcome, <span id="displayName"></span>!</h2>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Date of Birth:</strong> <span id="displayDOB"></span></p>
+      <p><strong>Program:</strong> <span id="displayProgram"></span></p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

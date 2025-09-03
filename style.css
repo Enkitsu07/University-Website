@@ -1,0 +1,173 @@
+body {
+  font-family: Times New Roman, bold;
+  background: url('https://uploads.onecompiler.io/43vb8wy2e/43vbnr7v3/122.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #a70000 0%, #28282B 100%);
+  color: #fff;
+  padding: 24px 0 12px 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 80px;
+  height: 89px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 12px #1c3c7244;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 8px #a7000015;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #a70000;
+  text-decoration: none;
+  padding: 14px 26px;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  transition: background 0.18s, border-bottom 0.18s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background: #f5eaea;
+  border-bottom: 3px solid #a70000;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.09);
+  padding: 32px 28px 24px 28px;
+}
+
+h2 {
+  text-align: center;
+  color: #1c3c72;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 6px;
+  border: 1px solid #bfc9d1;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Times New Roman", serif;
+}
+
+input[type="submit"],
+button {
+  background: linear-gradient(90deg, #a70000 0%, #28282B 100%);
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.mission-vision p {
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.programs-list p {
+  text-align: center;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.info-section {
+  background: #f7fbff;
+  border-radius: 8px;
+  padding: 18px;
+  margin-top: 24px;
+  border: 1px solid #e3eefe;
+}
+
+.mission-vision {
+  background: #eaf2fb;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.mission-vision h3 {
+  margin-top: 0;
+  color: #1c3c72;
+  font-size: 18px;
+}
+
+.mission-vision p {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.programs-list {
+  background: #f6f9fc;
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-size: 15px;
+  border: 1px solid #dde6f1;
+}
+
+.programs-list h3 {
+  color: #a70000;
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.programs-list ul {
+  color: #2c3e50;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+.programs-list li strong {
+  color: #28282B;
+}
